@@ -11,7 +11,7 @@ public class Main {
         productManagement.addProduct(product3);
         try {
             ReadAndWrite io = new ReadAndWrite();
-            io.writeFile("product.txt", productManagement.productList);
+            io.writeFile("product.csv", productManagement.productList);
             io.readFile("product.txt");
             productManagement.display();
         } catch (Exception e){
